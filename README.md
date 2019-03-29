@@ -4,7 +4,7 @@ Please follow the installation instructions from [istio.io](https://istio.io/doc
 
 Create a istio use this chart,follow steps:
 
-First:
+## First:
   create secret for kiali  that use to login kiali web ui
 
 ```bash
@@ -14,7 +14,7 @@ First:
 ```
 According to the prompt, input your username and password for kiali.
 
-Second:
+## Second:
   there use my define values file in istio-cahrt whict name is values-with-plugins.yaml, or you can use youself
 
 ```bash
@@ -23,7 +23,7 @@ Second:
   helm install istio-chart/istio --tiller-namespace [namespce] -n istio --namespace istio-system -f istio-cahrt/istio/values-with-plugins.yaml
 ```
 
-Thrid:
+## Thrid:
    expose grafana、prometheus、jager、kiali 
 
    ```bash
