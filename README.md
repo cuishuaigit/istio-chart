@@ -32,7 +32,10 @@ Thrid:
    ```
 ## visit grafana、prometheus、jager、kiali
 
-grafana: http://node-ip:30161 \n
-prometheus: http://node-ip:30971 \n
-jager: http://node-ip:32217 \n
-kiali: http://node-ip:31502/kiali \n
+  grafana: http://node-ip:30161
+
+  prometheus: http://node-ip:30971 
+
+  jager: http://node-ip:32217 
+
+  kiali: http://node-ip:31502/kiali 
