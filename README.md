@@ -30,3 +30,9 @@ Thrid:
    kubectl apply -f istio-chart/expose
 
    ```
+## visit grafana、prometheus、jager、kiali
+
+grafana: http://node-ip:30161
+prometheus: http://node-ip:30971
+jager: http://node-ip:32217
+kiali: http://node-ip:31502/kiali
