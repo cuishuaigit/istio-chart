@@ -35,8 +35,8 @@ According to the prompt, input your username and password for kiali.
 
 ```bash
   kubectl create namespace istio-system
-  helm install istio-chart/istio-init --tiller-namespace [namespace] -n istio-init --namespace istio-system -f istio-chart/istio-init_values-cert.yaml
-  helm install istio-chart/istio --tiller-namespace [namespce] -n istio --namespace istio-system -f istio-cahrt/istio_values-with-plugins.yaml
+  helm install istio-chart/istio-init --tiller-namespace [namespace] -n istio-init --namespace istio-system -f istio-chart/istio-init/values.yaml -f istio-chart/istio-init_values-cert.yaml
+  helm install istio-chart/istio --tiller-namespace [namespce] -n istio --namespace istio-system -f istio-chart/istio/values.yaml -f istio-cahrt/istio_values-with-plugins.yaml
 ```
 
 ## Thrid:
