@@ -42,4 +42,4 @@ spec:
   host: prometheus
   trafficPolicy:
     tls:
-      mode: DISABLE<Paste>
+      mode: DISABLE
