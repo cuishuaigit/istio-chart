@@ -2,11 +2,19 @@
 #
 grafana:
   enabled: true
-
+  ingress:
+      enabled: true
+      hosts:
+        - grafana.k8s.qing.com
+# *.k8s.qing.com is kong-ingress-controlor's domain 
 # addon prometheus configuration
 #
 prometheus:
   enabled: true
+  ingress:
+      enabled: true
+      hosts:
+        - prometheus.k8s.qing.com
 
 # addon servicegraph configuration
 #
@@ -17,6 +25,10 @@ servicegraph:
 #
 tracing:
   enabled: true
+  ingress:
+      enabled: true
+      hosts:
+        - tracing.k8s.qing.com
 
 # addon kiali tracing configuration
 #
@@ -28,6 +40,10 @@ kiali:
   kialiuserkey:
   kialipasskey:
   createLoginSecret: true
+  ingress:
+      enabled: true
+      hosts:
+        - kiali.k8s.qing.com
 # Istio CNI plugin enabled
 #   This must be enabled to use the CNI plugin in Istio.  The CNI plugin is installed separately.
 #   If true, the privileged initContainer istio-init is not needed to perform the traffic redirect

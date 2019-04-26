@@ -41,18 +41,20 @@ According to the prompt, input your username and password for kiali.
 
 ## Thrid:
 
-   expose grafana、prometheus、jager、kiali 
+   expose grafana、prometheus、jager、kiali if do not use ingress, because we use [kong-ingress-controlor](https://github.com/cuishuaigit/k8s-kong) or you have another 
+   ingress-controlor,you won't execute this step.
 
    ```bash
-   kubectl apply -f istio-chart/expose
+   kubectl apply -f istio-chart/expose-without-ingress
 
    ```
 ## visit grafana、prometheus、jager、kiali
+   *.k8s.qing.com is your ingress controlor domain.
 
-  grafana: http://node-ip:30161
+  grafana: http://grafana.k8s.qing.com
 
-  prometheus: http://node-ip:30971 
+  prometheus: http://prometheus.k8s.qing.com 
 
-  jager: http://node-ip:32217 
+  jager: http://tracing.k8s.qing.com
 
-  kiali: http://node-ip:31502/kiali 
+  kiali: http://kiali.k8s.qing.com
